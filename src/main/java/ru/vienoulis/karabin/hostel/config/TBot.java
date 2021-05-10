@@ -1,10 +1,12 @@
 package ru.vienoulis.karabin.hostel.config;
 
+import lombok.extern.slf4j.Slf4j;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.extensions.bots.commandbot.TelegramLongPollingCommandBot;
 
+@Slf4j
 public class TBot extends TelegramLongPollingCommandBot {
     private final String username;
 
@@ -26,6 +28,8 @@ public class TBot extends TelegramLongPollingCommandBot {
         if (update.hasMessage() && update.getMessage().hasText()) {
             String message = update.getMessage().getText().trim();
             String chatId = update.getMessage().getChatId().toString();
+            log.info(" message {}", message);
+            log.info(" chatId {}", chatId);
             SendMessage sm = new SendMessage();
             sm.setChatId(chatId);
             sm.setText(message);
@@ -33,7 +37,7 @@ public class TBot extends TelegramLongPollingCommandBot {
             try {
                 execute(sm);
             } catch (TelegramApiException e) {
-                e.printStackTrace();
+                log.warn("", e);
             }
         }
     }
