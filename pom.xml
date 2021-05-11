@@ -9,7 +9,7 @@
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>Karabin Hostel</name>
+    <name>Karabin Hostel TBot</name>
 
     <licenses>
         <license>
@@ -31,7 +31,11 @@
         <sring.version>5.3.6</sring.version>
         <lombok.version>1.18.16</lombok.version>
         <org.projectlombok.version>1.18.16</org.projectlombok.version>
-        <slf4j.version>1.7.30</slf4j.version>
+        <slf4j.version>1.7.26</slf4j.version>
+        <log4j.version>1.2.17</log4j.version>
+        <log4j-core.version>2.12.1</log4j-core.version>
+        <log4j-api.version>2.12.1</log4j-api.version>
+        <logback.version>1.2.3</logback.version>
     </properties>
 
     <dependencies>
@@ -69,14 +73,29 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
+            <groupId>org.optaplanner</groupId>
+            <artifactId>optaplanner-core</artifactId>
+            <version>6.1.0.Final</version>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>${slf4j.version}</version>
+            <groupId>jdom</groupId>
+            <artifactId>jdom</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.optaplanner</groupId>
+            <artifactId>optaplanner-benchmark</artifactId>
+            <version>6.1.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.0.9</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.9</version>
         </dependency>
     </dependencies>
 
