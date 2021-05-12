@@ -1,9 +1,0 @@
-﻿13.05.2021 00:13:51.478 [main] INFO  r.v.k.h.App - Start app
-13.05.2021 00:14:01.032 [karabin_test_bot Telegram Executor] INFO  r.v.k.h.c.TBot -  message ghjkl
-13.05.2021 00:14:01.033 [karabin_test_bot Telegram Executor] INFO  r.v.k.h.c.TBot -  chatId 309427072
-13.05.2021 00:14:20.148 [main] INFO  r.v.k.h.App - Start app
-13.05.2021 00:14:38.012 [karabin_test_bot Telegram Executor] INFO  r.v.k.h.c.TBot -  message hjkl;
-13.05.2021 00:14:38.013 [karabin_test_bot Telegram Executor] INFO  r.v.k.h.c.TBot -  chatId 309427072
-13.05.2021 00:22:32.784 INFO  r.v.k.h.App - Start app
-13.05.2021 00:24:47.727 INFO  r.v.k.h.App - Start app
-13.05.2021 00:32:22.192 INFO  App.main:23 - Start app
