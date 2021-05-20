@@ -36,6 +36,9 @@
         <log4j-core.version>2.12.1</log4j-core.version>
         <log4j-api.version>2.12.1</log4j-api.version>
         <logback.version>1.2.3</logback.version>
+        <mybatis.version>3.5.7</mybatis.version>
+        <jdbc.driver.version>42.2.20</jdbc.driver.version>
+        <my.sql.version>8.0.25</my.sql.version>
     </properties>
 
     <dependencies>
@@ -102,6 +105,17 @@
             <artifactId>junit-jupiter</artifactId>
             <version>RELEASE</version>
             <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${my.sql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
         </dependency>
     </dependencies>
 
